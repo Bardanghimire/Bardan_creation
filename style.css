@@ -188,12 +188,13 @@ body{
 
 .section-3__left-content-p{
     line-height: 1.5;
-    margin-bottom: 2em;
+    margin: 2em 0;
     font-size: clamp(1.15rem, 1.5vw, 1.3rem);
 }
 
 .section-3__img{
     max-width: 100%;
+    border-radius: 0.5em;
 }
 .section-3__feature{
     background-color: var(--primary-color);
@@ -201,6 +202,7 @@ body{
     text-align: center;
     color: white;
     margin: 1em 0;
+    border-radius: 1em;
 }
 p{
     font-family: var(--ubuntu);
@@ -211,7 +213,7 @@ p{
     font-size: clamp(1.7rem, 2vw, 2rem);
 }
 .s3__feature-p{
-    margin: 1em 0;
+    margin: 2em 0;
     font-size: clamp(1.15rem, 1.5vw, 1.3rem);;
 }
 
@@ -229,7 +231,7 @@ p{
     margin: 1.3em 0;
 }
 .footer__about-title{
-    font-size: clamp(1.7rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 1vw, 2rem);
 
     color: var(--text-color);
     margin: 0.4em 0;
@@ -308,9 +310,15 @@ p{
         flex-grow: 1;
     }
     .section-3__right-content{
-        margin-left: 2em;
         padding: 1em 0;
         gap: 2em;
+    }
+    .section-3__feature{
+        width: 100%;
+    }
+    .section-3__left-content,
+    .section-3__right-content{
+        width: 100%;
     }
     .footer__title{
         text-align: center;
@@ -320,5 +328,33 @@ p{
     }
     .footer__getting-around-item{
         margin-top: 10px;
+    }
+}
+
+@media (min-width: 1000px){
+    .column{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .section-3__right-content{
+        gap: 0.3em;
+        margin-left: 3em;
+        flex-direction: column;
+    }
+    .section-3__feature{
+        padding: 1.5em 1em;
+    }
+    .footer__about{
+        width: 40%;
+        padding: 1em;
+        margin: 0;
+    }
+    .footer__right{
+        width: 60%;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    .footer__getting-around{
+        width: 100%;
     }
 }
