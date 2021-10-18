@@ -232,7 +232,8 @@ p{
 .footer__title{
     text-align: center;
     color: white;
-    font-size: clamp(1.7rem, 2vw, 2rem);
+    padding: 0 10px;
+    font-size: clamp(1.45rem, 3vw, 2rem);
     font-weight: bold;
 }
 
