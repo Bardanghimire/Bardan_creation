@@ -11,44 +11,51 @@
 
 <body>
     <header class="header">
-        <div class="container flex">
+        <div class="container">
             <button class="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="logo">
-                <img src="img/logo_nepal.svg" alt="logo" class="logo__img"><span class="logo__text"> Nepal</span>
+
+            <div class="flex">
+                <div class="logo">
+                    <img src="img/logo_nepal.svg" alt="logo" class="logo__img">
+                    <div class="logo__text">Nepal</div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list nav__list-primary">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Feedback</a>
+                        </li>
+                    </ul>
+                    <ul class="nav__list nav__list-secondary">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Sign in</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link-btn">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul class="nav__list nav__list-primary">
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav__list nav__list-secondary">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Sign in</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link nav__link-btn">Sign up</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <!-- Section 1: Intro -->
     <section class="intro section">
-        <div class="container">
+        <div class="container flex">
+            <h1 class="intro__heading">Responsive layouts <span class="text-color">don't have to be a
+                    struggle</span>
+            </h1>
             <div class="intro__text">
-                <h1 class="intro__heading">Responsive layouts <span class="text-color">don't have to be a
-                        struggle</span>
-                </h1>
                 <p class="intro__text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis porro
                     voluptatum magni, dolor assumenda.</p>
                 <a class="intro__text-btn" href="#">I want to learn</a>
@@ -60,7 +67,7 @@
     <!-- Section 2: Started -->
     <section class="section-2 section">
         <div class="container">
-            <div class="row">
+            <div class="row flex">
                 <div class="col">
                     <h2>Mobile-first</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error est ipsam repellat laboriosam
@@ -83,7 +90,7 @@
 
     <!-- Section 3: started -->
     <section class="section section-3">
-        <div class="container">
+        <div class="container flex column">
             <div class="section-3__left-content">
                 <h1 class="section-3__left-content-heading">It doesn't have to be so hard</h1>
                 <p class="section-3__left-content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
@@ -97,7 +104,7 @@
                     sed sapiente architecto.</p>
             </div>
 
-            <div class="section-3__right-content">
+            <div class="section-3__right-content flex">
                 <div class="section-3__feature">
                     <h2 class="s3__feature-title">Break it down</h2>
                     <p class="s3__feature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia
@@ -120,55 +127,57 @@
 
     <!-- Final Section: started -->
     <section class="footer section">
+        <h1 class="footer__title">Just scratching the surface</h1>
         <div class="container">
-            <h1 class="footer__title">Just scratching the surface</h1>
             <div class="footer__about footer__element">
                 <h3 class="footer__about-title">About our company</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus, et rem perspiciatis eligendi
                     beatae.</p>
             </div>
-            <div class="footer__getting-around footer__element">
-                <h3 class="footer__about-title">Getting around</h3>
-                <ul class="footer__getting-around-list">
-                    <li class="footer__getting-around-item
-                    "><a href="#">Home</a></li>
-                    <li class="footer__getting-around-item"><a href="#">About</a></li>
-                    <li class="footer__getting-around-item"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer__others footer__element">
-                <h3 class="footer__about-title">Other things</h3>
-                <ul class="footer__getting-around-list">
-                    <li class="footer__getting-around-item">
-                        Lorem
-                    </li>
-                    <li class="footer__getting-around-item">
-                        doror
-                    </li>
-                    <li class="footer__getting-around-item">
-                        sit ammet
-                    </li>
-                    <li class="footer__getting-around-item">
-                        Molecule
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__element">
-                <h3 class="footer__about-title">And more</h3>
-                <ul class="footer__getting-around-list">
-                    <li class="footer__getting-around-item">
-                        Lorem ipsum
-                    </li>
-                    <li class="footer__getting-around-item">
-                        doror
-                    </li>
-                    <li class="footer__getting-around-item">
-                        doror
-                    </li>
-                    <li class="footer__getting-around-item">
-                        doror
-                    </li>
-                </ul>
+            <div class="flex">
+                <div class="footer__getting-around footer__element">
+                    <h3 class="footer__about-title">Getting around</h3>
+                    <ul class="footer__getting-around-list">
+                        <li class="footer__getting-around-item
+                        "><a href="#">Home</a></li>
+                        <li class="footer__getting-around-item"><a href="#">About</a></li>
+                        <li class="footer__getting-around-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__others footer__element">
+                    <h3 class="footer__about-title">Other things</h3>
+                    <ul class="footer__getting-around-list">
+                        <li class="footer__getting-around-item">
+                            Lorem
+                        </li>
+                        <li class="footer__getting-around-item">
+                            doror
+                        </li>
+                        <li class="footer__getting-around-item">
+                            sit ammet
+                        </li>
+                        <li class="footer__getting-around-item">
+                            Molecule
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__element">
+                    <h3 class="footer__about-title">And more</h3>
+                    <ul class="footer__getting-around-list">
+                        <li class="footer__getting-around-item">
+                            Lorem ipsum
+                        </li>
+                        <li class="footer__getting-around-item">
+                            Mind
+                        </li>
+                        <li class="footer__getting-around-item">
+                            magic
+                        </li>
+                        <li class="footer__getting-around-item">
+                            flow
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
