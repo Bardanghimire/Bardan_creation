@@ -31,6 +31,12 @@ body{
     position: relative;
     padding: 0.6em 0;
 }
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .container{
     width: 80%;
     width: min(89%, 1000px);
@@ -122,6 +128,7 @@ body{
 }
 
 .intro{
+    margin-top: 5em;
     background-color: var(--sec-color);
     color: white;
 }
