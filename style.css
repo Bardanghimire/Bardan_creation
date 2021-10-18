@@ -13,6 +13,7 @@ font-family: 'Ubuntu', sans-serif; */
 
     --ubuntu: 'Ubuntu', sans-serif;
     --google: 'Noto Sans Mono', monospace;
+    --Linkhover-color: red;
 }
 
 
@@ -50,6 +51,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 3rem;
+    text-decoration: none;
 }
 .logo__img{
     max-width: 100%;
@@ -104,10 +106,28 @@ body{
     color: white;
     margin-bottom: 1em;
     text-transform: uppercase;
+    position: relative;
 }
 .nav__link:hover,
 .nav__link:active{
     opacity: 0.75;
+}
+
+.nav__link:not(.nav__link-btn)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    bottom: -2px;
+    height: 2.2px;
+    border-radius: 20%;
+    background-color: var(--Linkhover-color);
+}
+.nav__link:not(.nav__link-btn):hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 250ms;
 }
 
 .nav__list-secondary{
