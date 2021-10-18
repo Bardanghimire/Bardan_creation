@@ -235,6 +235,7 @@ p{
     padding: 0 10px;
     font-size: clamp(1.45rem, 3vw, 2rem);
     font-weight: bold;
+    padding: 0 5px;
 }
 
 .footer__element{
