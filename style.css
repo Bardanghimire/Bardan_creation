@@ -107,10 +107,12 @@ body{
     margin-bottom: 1em;
     text-transform: uppercase;
     position: relative;
+    opacity: 0.75;
 }
 .nav__link:hover,
 .nav__link:active{
-    opacity: 0.75;
+    opacity: 1;
+    /* transition: opacity 150ms; */
 }
 
 .nav__link:not(.nav__link-btn)::after{
