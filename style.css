@@ -14,8 +14,36 @@ font-family: 'Ubuntu', sans-serif; */
     --ubuntu: 'Ubuntu', sans-serif;
     --google: 'Noto Sans Mono', monospace;
     --Linkhover-color: red;
+    --progress-bar-color: #317cd1;
+}
+.progress-bar{
+    box-shadow: 0 0 10px #58a6ff;
+    position: fixed;
+    top: 0;
+    width: 0%;
+    z-index: 10;
+    height: 2px;
+    background-color: var(--progress-bar-color);
+    animation: progress-bar 1.2s ease-in-out 1 normal;
 }
 
+@keyframes progress-bar {
+    0%{
+        display: block;
+    }
+    25%{
+        width: 25%;
+    }
+    /* 50%{
+        width: 50%;
+    } */
+    /* 75%{
+        width: 75%;
+    } */
+    100%{
+        width: 100%;
+    }
+}
 
 *{
     margin: 0;
@@ -24,6 +52,7 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 body{
+    position: relative;
     background-color:beige;
     font-family: 'Noto Sans Mono', monospace;
 }
