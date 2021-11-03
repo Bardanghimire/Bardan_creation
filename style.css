@@ -53,7 +53,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 body{
     position: relative;
-    background-color:beige;
+    background-color: var(--primary-color);
     font-family: 'Noto Sans Mono', monospace;
 }
 .header{
