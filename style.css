@@ -17,7 +17,7 @@ font-family: 'Ubuntu', sans-serif; */
     --progress-bar-color: #317cd1;
 }
 .progress-bar{
-    box-shadow: 0 0 10px #58a6ff;
+    box-shadow: 0 0 20px 3px #58a6ff;
     position: fixed;
     top: 0;
     width: 0%;
